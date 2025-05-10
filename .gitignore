@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Pygbag build files
+.pygbag/
+build/
+
+# Generated sound files - uncomment if you want to exclude them
+# sounds/
+
+# IDE files
+.idea/
+.vscode/
+
+# OS specific files
+.DS_Store
+Thumbs.db 
