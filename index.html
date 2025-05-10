@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #ff0;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .game-container {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            background-color: #111;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>BREAKOUT GAME</h1>
+    <p>Loading game...</p>
+    <div class="game-container" id="game-container">
+        <!-- Game will load here -->
+        <p>If the game doesn't load, please check your browser console for errors.</p>
+    </div>
+    <script>
+        // This script will be replaced by the pygbag output
+        window.onload = function() {
+            // Redirect to the actual game page if it exists
+            const gameScript = document.createElement('script');
+            gameScript.src = './build/web/main.js';
+            gameScript.onerror = function() {
+                document.getElementById('game-container').innerHTML = '<p>Game failed to load. Please try again later.</p>';
+            };
+            document.body.appendChild(gameScript);
+        };
+    </script>
+</body>
+</html> 
