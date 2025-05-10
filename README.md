@@ -1,6 +1,6 @@
 # Breakout Game
 
-A classic Breakout arcade game implemented in Python using Pygame.
+A classic Breakout arcade game implemented in Python using Pygame, with a JavaScript version for web deployment.
 
 ## Features
 
@@ -11,13 +11,35 @@ A classic Breakout arcade game implemented in Python using Pygame.
 - Menu and game over screens
 - Sound effects when the ball hits blocks and paddle
 - Soft background music
+- Web playable version
+
+## Online Demo
+
+Play the game online: [Breakout Game on Vercel](https://breakout-game-mallocode300.vercel.app/)
+
+## Versions
+
+### Python Version (Main Implementation)
+- Full featured implementation using Pygame
+- Local gameplay with sound effects
+- Source for the JavaScript web version
+
+### JavaScript Version (Web Deployment)
+- Pure JavaScript/HTML5 Canvas implementation
+- Fully playable in any modern browser
+- No plugins required
+- Deployed on Vercel
 
 ## Requirements
 
+### For the Python version:
 - Python 3.6+
 - Pygame
 - Numpy (for sound generation)
 - Pygbag (for web deployment)
+
+### For the JavaScript version:
+- Any modern web browser
 
 ## Installation
 
@@ -30,11 +52,14 @@ pip install -r requirements.txt
 
 ## How to Play
 
-Run the game locally:
+### Local Python Version:
 
 ```
 python main.py
 ```
+
+### Web Version:
+Visit [https://breakout-game-mallocode300.vercel.app/](https://breakout-game-mallocode300.vercel.app/) or open `/public/index.html` in your browser.
 
 ### Controls
 
@@ -52,30 +77,28 @@ If no sound files are found, the game will automatically generate simple sound e
 
 ## Web Deployment
 
-To deploy the game on the web using Pygbag:
+The game is deployed on Vercel using a JavaScript implementation that mimics the Python version's functionality.
 
-1. Install Pygbag if you haven't already:
-```
-pip install pygbag
-```
+### To deploy your own version:
 
-2. Run the following command:
-```
-pygbag main.py
-```
+1. Fork this repository
+2. Connect it to your Vercel account
+3. Deploy using the static site configuration in vercel.json
 
-3. Open your web browser and go to http://localhost:8000
+For local web preview, you can simply open the `/public/index.html` file in your browser.
 
-4. For online deployment, you can host the generated files on any web hosting service like GitHub Pages, Netlify, or Vercel.
+## Development
 
-## Demo
+- Python code is in `main.py`
+- JavaScript web version is in `/public/breakout.js`
+- HTML for web version is in `/public/index.html`
 
-The game includes:
+## Author
 
-- A main menu screen
-- Gameplay with mouse-controlled paddle
-- Colored bricks
-- Score tracking
-- Game over screen with final score
+- [Mallory Antomarchi](https://github.com/mallocode300)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 Enjoy playing! 
